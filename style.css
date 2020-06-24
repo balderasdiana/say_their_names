@@ -10,6 +10,10 @@
   font-family: "Muli", sans-serif;
 }
 
+#footer {
+  text-align: center;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -159,3 +163,4 @@ body {
     width: 100%;
   }
 }
+
