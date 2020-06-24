@@ -1,6 +1,6 @@
 # Say Their Names
 
-This is to honor the people who have lost their lives because of police bruality, injustices, and white supremacy
+To honor the innocent human beings who lost their lives because of police brutality, injustice, and white supremacy
 
 ---
 
