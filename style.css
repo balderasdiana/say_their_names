@@ -1,21 +1,74 @@
+#title {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+#description {
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+}
+
+#footer {
+  text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
 body {
-  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/playstation-pattern.png");
-  background-size: 8%;
-  font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: ;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   font-size: 14px;
 }
-h1 {
-  font-size: 80px;
-  margin: 40px 0 0;
-  opacity: 0.05;
-  padding: 0;
-  text-align: center;
-  width: 100%;
-  z-index: 0;
-}
+
 .main-container {
   display: flex;
   flex-wrap: wrap;
@@ -24,11 +77,12 @@ h1 {
   max-width: 1200px;
   width: 100%;
 }
+
 .card {
   background: #fff;
   border: 1px solid #eee;
   border-radius: 20px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   color: slate;
   cursor: pointer;
   flex-basis: calc(33% - 40px);
@@ -38,47 +92,56 @@ h1 {
   position: relative;
   transition: 0.5s ease all;
 }
+
 .card:before {
   background: #fff;
   border-radius: 40px;
   height: 5px;
-  content: '';
+  content: "";
   left: 20px;
   position: absolute;
   right: 20px;
   top: 20px;
   transition: 0.5s ease all;
 }
+
 .card h2,
 .card p {
   position: relative;
   z-index: 2;
 }
+
 .card h2 {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
   margin: 0 0 20px 0;
   padding: 0 0 10px 0;
 }
+
 .card p {
   margin: 10px 0 0;
 }
-.card.purple:before {
-  background-image: linear-gradient(153deg, #ef33f2 0%, #3544dc 95%);
+
+.card.black:before {
+  background-color: black;
 }
-.card.yellow:before {
-  background-image: linear-gradient(153deg, #f8c332 0%, #fb8332 95%);
+
+.card.olive:before {
+  background-color: #43302e;
 }
-.card.green:before {
-  background-image: linear-gradient(153deg, #8adc32 0%, #25c7a2 95%);
+
+.card.sienna:before {
+  background-color: #592720;
 }
+
 .card:hover {
   border: 0;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   color: #fff;
   transform: scale(1.05);
   z-index: 2;
 }
+
 .card:hover:before {
   border-radius: 20px;
   left: 0;
@@ -86,10 +149,12 @@ h1 {
   right: 0;
   top: 0;
 }
+
 .card:hover h2,
 .card:hover p {
-  text-shadow: 2px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .card.border:hover:before {
   border-radius: 16px;
   left: 8px;
@@ -97,19 +162,5 @@ h1 {
   right: 8px;
   top: 8px;
 }
-@media (max-width: 1200px) {
-  h1 {
-    font-size: 30px;
-  }
-  .main-container {
-    flex-direction: column;
-    max-width: 600px;
-  }
-  .card {
-    margin: 0 0 10px 0;
-    width: 100%;
-  }
-}
-
 
 
