@@ -150,16 +150,6 @@ body {
   right: 8px;
   top: 8px;
 }
-@media (max-width: 1200px) {
-  .main-container {
-    flex-direction: column;
-    max-width: 600px;
-  }
-  .card {
-    margin: 0 0 10px 0;
-    width: 100%;
-  }
-}
 
 @media only screen and (max-width: 600px) {
   .main-container {
