@@ -182,13 +182,16 @@ body {
   }
 }
 
+#button {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
-  position: relative;
-  top: 45%; 
-  left: 45%;
 }
 
 a:hover {
