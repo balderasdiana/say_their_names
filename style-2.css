@@ -1,0 +1,130 @@
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+}
+
+a {
+  color: white;
+  -moz-transition: 0.1s color ease-in;
+  -webkit-transition: 0.1s color ease-in;
+  transition: 0.1s color ease-in;
+}
+
+a:hover {
+  color: gray;
+}
+
+.article {
+  margin: 0 auto 3.0em;
+  max-width: 30em;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+h3 {
+  font-size: 2.0em;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.meta {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+p {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  font-size: 1.0em;
+  line-height: 1.5em;
+}
+
+.intro {
+  font-size: 1.5em;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  
+}
+
+blockquote {
+  font-size: 1.75em;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Muli", sans-serif;
+  line-height: 1.25em;
+}
+
+blockquote:before {
+  content: '“';
+}
+
+blockquote:after {
+  content: '”';
+}
+
+
+
